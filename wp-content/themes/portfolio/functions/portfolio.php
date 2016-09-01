@@ -407,6 +407,7 @@ class AjaxPortfolio {
 		$html .= "</div>";
 		endwhile;
 		endif;
+		
 		wp_reset_postdata();
 		if ( $html )
 			return $html;
