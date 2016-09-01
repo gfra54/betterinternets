@@ -36,3 +36,11 @@
 .project_flexslider ul.project_slides li img, .project_flexslider ul.project_slides li video {
 	border:2px solid rgb(255, 108, 84);
 }
+
+.page-heading {
+    font-family: 'Cooper';
+    font-size: 35px;
+}
+.ajax_project > .project_description > h2.title, .portfolio-overlay .img-overlay h2.overlay-title {
+    font-family: 'Cooper';
+}
