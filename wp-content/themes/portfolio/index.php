@@ -8,8 +8,18 @@
 		<?php if($mts_options['mts_portfoliopage_subheading']) { ?>
 		<h2 class="page-subheading"><?php echo $mts_options['mts_portfoliopage_subheading']; ?></h2>
 		<?php } ?>
+	    <div class="header-social">
+	        <?php foreach( $mts_options['mts_footer_social'] as $footer_icons ) : ?>
+	            <?php if( ! empty( $footer_icons['mts_footer_icon'] ) && isset( $footer_icons['mts_footer_icon'] ) ) : ?>
+	                    <a href="<?php print $footer_icons['mts_footer_icon_link'] ?>" class="footer-<?php print $footer_icons['mts_footer_icon'] ?>"><span class="fa fa-<?php print $footer_icons['mts_footer_icon'] ?>"></span></a>
+	            <?php endif; ?>
+	        <?php endforeach; ?>
+	    </div>
 	</div>
 	<?php } ?>
+
+
+		
 	<div class="content ss-full-width">
 		<article>
 			<?php 

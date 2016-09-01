@@ -362,7 +362,12 @@ class AjaxPortfolio {
 		$current_post['title']   = get_the_title();
 		$current_post['content'] = get_the_excerpt();
 		// Apply the default wordpress filters to the content
-		$current_post['content'] = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $current_post['content'] ) );
+
+		$content = get_the_content();
+		$content = apply_filters( 'the_content', $content );
+		$content = str_replace( ']]>', ']]&gt;', $content );
+
+		$current_post['content'] = $content;
 		$rand                    = mt_rand();
 		$slideshow               = '';
 		
@@ -396,6 +401,7 @@ class AjaxPortfolio {
 		$html .= "<div class='project_description'>";
 		$html .= "<h2 class='title'>{$title}</h2>";
 		$html .= $content;
+		$html .= '<p></p>';
 		$html .= $termlist;
 		$html .= "</div>";
 		$html .= "</div>";

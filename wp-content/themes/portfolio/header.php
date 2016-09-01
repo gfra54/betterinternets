@@ -45,6 +45,7 @@
 						<?php } ?>
 					<?php } ?>
 				</div>
+
 				<?php if ($mts_options['mts_show_secondary_nav'] == '1') { ?>
 					<div class="secondary-navigation">
 						<nav id="navigation" class="clearfix" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -62,4 +63,3 @@
 			</div><!--.container-->        
 		</header>
 	<div id="main" class="container clearfix">
-		

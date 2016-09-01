@@ -51,13 +51,6 @@ if ( ! function_exists( 'mts_copyrights_credit' ) ) {
 <!--start copyrights-->
 <div class="row" id="copyright-note">
 	<span>&copy; <?php echo date("Y") ?> <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('description'); ?>" rel="nofollow"><span><?php bloginfo('name'); ?></span></a>. <?php echo $mts_options['mts_copyrights']; ?></span>
-    <span class="footer-social">
-        <?php foreach( $mts_options['mts_footer_social'] as $footer_icons ) : ?>
-            <?php if( ! empty( $footer_icons['mts_footer_icon'] ) && isset( $footer_icons['mts_footer_icon'] ) ) : ?>
-                    <a href="<?php print $footer_icons['mts_footer_icon_link'] ?>" class="footer-<?php print $footer_icons['mts_footer_icon'] ?>"><span class="fa fa-<?php print $footer_icons['mts_footer_icon'] ?>"></span></a>
-            <?php endif; ?>
-        <?php endforeach; ?>
-    </span>
 </div>
 <!--end copyrights-->
 <?php }

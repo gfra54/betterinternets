@@ -1,0 +1,38 @@
+.portfolio-overlay .img-overlay {
+	opacity: 1;
+	-webkit-transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+	transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.portfolio-overlay .img-overlay:hover {
+	background-color:rgba(255, 108, 84,0.8)
+}
+
+
+
+.portfolio-grid-container .portfolio-image .entry-image{
+	border:2px solid rgb(255, 108, 84);
+}
+
+.header-social {
+	text-align: center;
+	font-size: 2em;
+}
+.header-social a{
+	margin-left: 0.5em;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+}
+.header-social a:nth-child(1){
+	margin-left: 0;
+}
+.header-social a:hover{
+	background: rgb(255, 108, 84);
+	color:white;
+}
+
+
+.project_flexslider ul.project_slides li img, .project_flexslider ul.project_slides li video {
+	border:2px solid rgb(255, 108, 84);
+}
